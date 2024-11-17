@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Karmenia Ditabaya Lontoh's Portofolio</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+	  
+	  
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+	    <div class="container">
+	      <a class="navbar-brand" href="index.html"><span>K</span>aren</a>
+	      <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+	        <span class="oi oi-menu"></span> Menu
+	      </button>
+
+	      <div class="collapse navbar-collapse" id="ftco-nav">
+	        <ul class="navbar-nav nav ml-auto">
+	          <li class="nav-item"><a href="index.html#home-section" class="nav-link"><span>Home</span></a></li>
+	          <li class="nav-item"><a href="index.html#about-section" class="nav-link"><span>About</span></a></li>
+	          <li class="nav-item"><a href="index.html#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="index.html#services-section" class="nav-link"><span>Services</span></a></li>
+	          <li class="nav-item"><a href="index.html#projects-section" class="nav-link"><span>Projects</span></a></li>
+	          <!-- <li class="nav-item"><a href="index.html#blog-section" class="nav-link"><span>My Blog</span></a></li> -->
+	          <li class="nav-item"><a href="index.html#contact-section" class="nav-link"><span>Contact</span></a></li>
+	        </ul>
+	      </div>
+	    </div>
+	  </nav>
+	  <div class="hero-wrap js-fullheight">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+          <div class="col-lg-10 ftco-animate d-flex align-items-center">
+          	<div class="text text-center">
+                <h1 class="mb-3 bread" style="white-space: nowrap;">Hotel Review: Sentiment Analysis</h1>
+	            <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span><span>Projects</span></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Start Here -->
+    <section class="ftco-section ftco-no-pb goto-here" id="hotel-reviews-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav id="navi">
+                        <ul>
+                            <li><a href="#page-1">Introduction</a></li>
+                            <li><a href="#page-2">Dataset Overview</a></li>
+                            <li><a href="#page-3">Methodology</a></li>
+                            <li><a href="#page-4">Models Employed</a></li>
+                            <li><a href="#page-5">Model Analysis</a></li>
+                            <li><a href="#page-6">Conclusion</a></li>
+                            <li><a href="#page-7">Model Deployment</a></li>
+                            <li><a href="#page-8">Libraries and Tools</a></li>
+                            <li><a href="#page-9">GitHub Repository</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div id="page-1" class="page one">
+                        <h2 class="heading">Introduction</h2>
+                        <p>Customer reviews are a key factor in the hospitality industry, influencing potential guests' decisions and shaping the reputation of hotels. This project aims to develop a deep learning model to classify hotel reviews based on sentiment, categorizing them into negative, neutral, or positive feedback. By analyzing these reviews, hotel managers can gain valuable insights into guest satisfaction and improve customer service.</p>
+                    </div>
+                
+                    <div id="page-2" class="page two">
+                        <h2 class="heading">Dataset Overview</h2>
+                        <p>The dataset for this project is sourced from TripAdvisor, a platform where travelers share their experiences. It consists of two main features:</p>
+                        <ul>
+                            <li><strong>Review:</strong> The text of the customer's feedback.</li>
+                            <li><strong>Rating:</strong> A numerical rating from 1 to 5 indicating customer satisfaction.</li>
+                        </ul>
+                        <p>The ratings are divided into three sentiment categories:</p>
+                        <ul>
+                            <li><strong>Negative</strong> (1-2)</li>
+                            <li><strong>Neutral</strong> (3)</li>
+                            <li><strong>Positive</strong> (4-5)</li>
+                        </ul>
+                        <p>Dataset URL: <a href="https://www.kaggle.com/datasets/andrewmvd/trip-advisor-hotel-reviews">TripAdvisor Hotel Reviews</a></p>
+                    </div>
+                
+                    <div id="page-3" class="page three">
+                        <h2 class="heading">Methodology</h2>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Data Loading and Inspection</strong></h3>
+                                    <p>Loading and inspecting the dataset to ensure data quality and completeness.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Exploratory Data Analysis (EDA)</strong></h3>
+                                    <p>Exploring patterns and trends; distribution of ratings and sentiment breakdown.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Feature Engineering</strong></h3>
+                                    <p>Prepare the review text; text preprocessing including tokenization, stopword removal, and lemmatization.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Model Training</strong></h3>
+                                    <p>Training a sentiment analysis model using ANN and enhancing it through transfer learning and hyperparameter tuning.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Model Evaluation</strong></h3>
+                                    <p>Evaluating model performance using metrics such as accuracy, F1-score, and loss functions.</p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Model Optimization</strong></h3>
+                                    <p>Refining the model through adjustments in the architecture, hyperparameters, and training process.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="page-4" class="page four">
+                        <h2 class="heading">Models Employed</h2>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Artificial Neural Networks (ANN)</strong></h3>
+                                    <p>ANN is employed as the primary model for sentiment classification, using layers to learn complex patterns in the review text.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Transfer Learning</strong></h3>
+                                    <p>Leveraging pre-trained models for better feature extraction and faster training.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <br><br><br>
+                    <div id="page-5" class="page five">
+                        <h2 class="heading">Model Analysis</h2>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Strengths</strong></h3>
+                                    <p>The model demonstrated high accuracy (92.69%) and consistent training/validation loss reduction, suggesting a well-learned model.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Weaknesses</strong></h3>
+                                    <p>The model struggles with neutral reviews, reflected by lower F1-scores for neutral sentiment classification.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="box text-center p-4 shadow">
+                                    <h3><strong>Improvements</strong></h3>
+                                    <p>Adding more training data, fine-tuning hyperparameters, and addressing class imbalance could further improve model performance.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div id="page-6" class="page six">
+                        <h2 class="heading">Conclusion</h2>
+                        <p>The sentiment analysis model successfully categorizes hotel reviews into negative, neutral, and positive sentiments, providing actionable insights for hotel management. Despite the high accuracy, addressing challenges with neutral sentiment classification and overfitting would improve overall performance.</p>
+                    </div>
+                
+                    <div id="page-7" class="page seven">
+                        <h2 class="heading">Model Deployment</h2>
+                        <p>The model is deployed on Hugging Face, allowing hotel managers to analyze customer feedback in real-time and make data-driven decisions to improve service quality.</p>
+                        <p>Explore the deployed model: <a href="https://huggingface.co/spaces/karenlontoh/hotel-review-sentiment-analysis">Hotel Review Sentiment Analysis on Hugging Face</a></p>
+                        <img src="images/hotel-ui.png" alt="Hotel Review Interface" style="width: 100%; height: auto; max-width: 900px;">
+                    </div>
+                
+                    <div id="page-8" class="page eight">
+                        <h2 class="heading">Libraries and Tools</h2>
+                        <div class="row">
+                            <div class="col-1 mb-4 d-flex justify-content-center">
+                              <img src="images/pandas.png" alt="Pandas" class="img-fluid">
+                            </div>
+                            <div class="col-1 mb-4 d-flex justify-content-center">
+                              <img src="images/numpy.png" alt="NumPy" class="img-fluid">
+                            </div>
+                            <div class="col-1 mb-4 d-flex justify-content-center">
+                              <img src="images/matplotlib.png" alt="Matplotlib" class="img-fluid">
+                            </div>
+                            <div class="col-1 mb-4 d-flex justify-content-center">
+                              <img src="images/seaborn.png" alt="Seaborn" class="img-fluid">
+                            </div>
+                            <div class="col-1 mb-4 d-flex justify-content-center">
+                              <img src="images/scikit.png" alt="Scikit-learn" class="img-fluid">
+                            </div>
+                            <div class="col-1 mb-4 d-flex justify-content-center">
+                                <img src="images/huggingface.svg" alt="Hugging Face" class="img-fluid">
+                            </div>
+                            <div class="col-1 mb-4 d-flex justify-content-center">
+                                <img src="images/tensorflow.png" alt="TensorFlow" class="img-fluid">
+                            </div>
+                            <div class="col-1 mb-4 d-flex justify-content-center">
+                                <img src="images/keras.png" alt="Keras" class="img-fluid">
+                            </div>
+                          </div>
+                    </div>
+                
+                    <div id="page-9" class="page nine">
+                        <h2 class="heading">GitHub Repository</h2>
+                        <p>Access the project’s code and further documentation on GitHub: <a href="https://github.com/karenlontoh/hotel-review-sentiment-analysis">Hotel Review Sentiment Analysis GitHub</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+  
+
+  <footer class="ftco-footer ftco-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 text-center">
+
+          <p><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved.
+        </div>
+      </div>
+    </div>
+  </footer>
+    
+  
+
+  <!-- loader -->
+  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
+
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+  
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
